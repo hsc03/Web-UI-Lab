@@ -1,4 +1,21 @@
+import type { Metadata } from "next";
 import PageList from "@/components/common/page-list";
+import { siteConfig } from "./seo";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: siteConfig.name,
+  },
+  description: siteConfig.description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: "/",
+  },
+};
 
 export default function Home() {
   return (
