@@ -1,8 +1,12 @@
+import KeyboardTester from "@/components/keyboard/keyboard-tester";
+
 export default function Page() {
   return (
-    <main>
-      <h1 className="text-8xl font-bold">Keyboard Test</h1>
-      <p className="mt-8">본문 들어갈 곳</p>
+    <main className="w-full flex flex-col items-center justify-center gap-y-10">
+      <h1 className="w-full text-8xl font-bold text-start">
+        Keyboard Test
+      </h1>
+      <KeyboardTester />
     </main>
   )
 }
